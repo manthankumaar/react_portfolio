@@ -231,11 +231,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Banner Css ************/
-
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-img-custom.jpg');
+  background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -301,15 +300,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-
-
 /************ Skills Css ************/
+p {
+  text-align: justify;
+}
+
 .skill {
   padding: 0 0 50px 0;
   position: relative;
 }
 .skill-bx {
-  background: #151515; 
+  background: #151515;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -331,7 +332,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto;
   position: relative;
 }
-.item img {
+.skill-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
 }
@@ -349,6 +350,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   background-color: black;
 }
+
+.keep_white {
+  color: white;
+  text-decoration: none;
+}
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -360,7 +366,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
-  text-align: center;
+  text-align: justify;
   width: 56%;
 }
 .project .nav.nav-pills {
