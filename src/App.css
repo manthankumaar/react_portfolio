@@ -387,8 +387,9 @@ p {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: justify;
-  width: 56%;
+  width: 70%;
 }
+
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;

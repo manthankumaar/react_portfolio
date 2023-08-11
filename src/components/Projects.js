@@ -3,12 +3,57 @@ import { ProjectCard } from './ProjectCard'
 import projImg1 from '../assets/img/project-img1.png'
 import projImg2 from '../assets/img/project-img2.png'
 import projImg3 from '../assets/img/project-img3.png'
+import projImg4 from '../assets/img/project-img4.png'
+import projImg5 from '../assets/img/project-img5.png'
+import projImg6 from '../assets/img/project-img6.png'
 import colorSharp2 from '../assets/img/color-sharp2.png'
 import 'animate.css'
 import TrackVisibility from 'react-on-screen'
 
 export const Projects = () => {
   const projects = [
+    {
+      title: (
+        <a
+          href='https://spotolet.netlify.app/'
+          target='_blank'
+          rel='noreferrer'
+          className='keep_white'
+        >
+          Spotolet
+        </a>
+      ),
+      description: 'Design & Development',
+      imgUrl: projImg3,
+    },
+    {
+      title: (
+        <a
+          href='https://order-pizzaapp.netlify.app/'
+          target='_blank'
+          rel='noreferrer'
+          className='keep_white'
+        >
+          E-commerce Pizaa Delivery App
+        </a>
+      ),
+      description: 'Design & Development',
+      imgUrl: projImg4,
+    },
+    {
+      title: (
+        <a
+          href='https://github.com/manthankumaar/worldwise'
+          target='_blank'
+          rel='noreferrer'
+          className='keep_white'
+        >
+          WorldWise App
+        </a>
+      ),
+      description: 'Design & Development',
+      imgUrl: projImg5,
+    },
     {
       title: (
         <a
@@ -26,6 +71,20 @@ export const Projects = () => {
     {
       title: (
         <a
+          href='https://github.com/manthankumaar/cars'
+          target='_blank'
+          rel='noreferrer'
+          className='keep_white'
+        >
+          Cars List
+        </a>
+      ),
+      description: 'Design & Development',
+      imgUrl: projImg6,
+    },
+    {
+      title: (
+        <a
           href='https://manthankumaar.github.io/DrumKit/'
           target='_blank'
           rel='noreferrer'
@@ -36,20 +95,6 @@ export const Projects = () => {
       ),
       description: 'Design & Development',
       imgUrl: projImg2,
-    },
-    {
-      title: (
-        <a
-          href='https://spotolet.netlify.app/'
-          target='_blank'
-          rel='noreferrer'
-          className='keep_white'
-        >
-          Spotolet
-        </a>
-      ),
-      description: 'Design & Development',
-      imgUrl: projImg3,
     },
   ]
 
@@ -67,13 +112,16 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p className='about'>
-                    Hey there! I'm a fresh developer with limited experience in
-                    web development and C++ programming. Here I've showcased
-                    some of my best work in the projects section here, including
-                    websites designed with HTML, CSS, and JavaScript, as well as
-                    C++ applications I've built. As I continue to grow as a
-                    developer, I'm excited to add more exciting projects to my
-                    portfolio and explore new opportunities in the field.
+                    Welcome to my project showcase, where I, Manthan Kumar, a
+                    budding developer with a year of valuable experience in
+                    React.js, HTML, CSS, and JavaScript, present a curated
+                    collection of my finest works. As a fresh talent in the
+                    world of web development, I have passionately crafted
+                    projects that reflect my dedication, creativity, and growth
+                    in these essential technologies. Each project represents a
+                    unique journey of learning and innovation, and I am excited
+                    to share my progress as I continue to shape my skills and
+                    embark on new challenges in this dynamic field.
                   </p>
                   <Tab.Container id='projects-tabs' defaultActiveKey='first'>
                     <Nav
@@ -113,6 +161,11 @@ export const Projects = () => {
                           {projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />
                           })}
+                        </Row>
+                        <Row>
+                          <p className='project_footer'>
+                            For more of my Projets please Visit my Github page
+                          </p>
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey='second'>
