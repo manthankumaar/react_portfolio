@@ -29,7 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-storybook": "build-storybook -o ./storybook-static"
   },
   "eslintConfig": {
     "extends": [
@@ -51,5 +52,8 @@
   },
   "overrides": {
     "autoprefixer": "10.4.5"
+  },
+  "devDependencies": {
+    "chromatic": "^10.2.0"
   }
 }

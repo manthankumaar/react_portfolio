@@ -1,0 +1,5 @@
+
+> personal-portfolio@0.1.0 build-storybook
+> build-storybook -o ./storybook-static --output-dir /var/folders/22/_w5h1pbn7s7dgzgxn6v4f3dw0000gn/T/chromatic--42785-I20qICD62vgG
+
+sh: build-storybook: command not found
